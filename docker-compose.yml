@@ -14,4 +14,4 @@ services:
     ports:
       - 3000:3000
     environment:
-      RAILS_ENV: production
+      RAILS_ENV: ${RAILS_ENV}
