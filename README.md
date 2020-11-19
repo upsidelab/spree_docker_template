@@ -19,6 +19,7 @@ spree:
     DB_HOST: postgres
     DB_PORT: 5432
 ``` 
+- (default) use the `DATABASE_URL` environment variable
 
 **3. Build the images:**
 ```console
