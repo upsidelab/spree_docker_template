@@ -14,4 +14,5 @@ services:
     ports:
       - 3000:3000
     environment:
-        DATABASE_URL: postgresql://${DATABASE_USER}:${DATABASE_PASSWORD}@postgres/${DATABASE_NAME}?pool=${RAILS_MAX_THREADS}
+      DATABASE_URL: postgresql://${DATABASE_USER}:${DATABASE_PASSWORD}@postgres/${DATABASE_NAME}?pool=${RAILS_MAX_THREADS}
+      RAILS_ENV: ${RAILS_ENV}
