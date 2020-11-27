@@ -14,10 +14,9 @@ By default, the hostname of the database is `postgres` and the port is `5432`. T
 ```yaml
 spree:
   environment:
-    DB_USER: spree_postgres
-    DB_PASSWORD: password
-    DB_HOST: postgres
-    DB_PORT: 5432
+    DB_USER: ${DATABASE_USER}
+    DB_PASSWORD: ${DATABASE_PASSWORD}
+	DB_NAME: ${DATABASE_NAME}
 ``` 
 - (default) use the `DATABASE_URL` environment variable
 
