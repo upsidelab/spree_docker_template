@@ -8,17 +8,8 @@ Base template for Ruby on Rails applications using Spree.
 
 **2. Configure database access**
 
-By default, the hostname of the database is `postgres` and the port is `5432`. To make your Rails application connect with it you can either:
-- set the database host, password etc. directly in your projects `database.yml`
-- add environment variables used in `database.yml` to the web service in `docker-compose.yml`, e.g.
-```yaml
-spree:
-  environment:
-    DB_USER: spree_postgres
-    DB_PASSWORD: password
-    DB_HOST: postgres
-    DB_PORT: 5432
-``` 
+By default, the hostname of the database is `postgres` and the port is `5432`. To make your Rails application connect with it you can:
+- use the `DATABASE_URL` environment variable through envvars defined in the `.env` file
 
 **3. Build the images:**
 ```console
