@@ -1,6 +1,10 @@
 # Spree Docker Template
 
-Base template for Ruby on Rails applications using Spree.
+This repository contains a basic Dockerfile and Docker Compose templates for running Spree-based applications.
+
+The Dockerfile is based on latest Ruby image, it also installs required dependencies for the application (Yarn, PostgreSQL libraries, ImageMagick).
+
+Included Docker Compose creates a two containers that can be used in development or test deployments: one for Spree and one for PostgreSQL.
 
 ## Setup
 
